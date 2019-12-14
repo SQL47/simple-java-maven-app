@@ -9,6 +9,9 @@ pipeline {
             steps {
                 sh 'mvn clean package'
             }
+            steps {
+                sh 'file 22'
+            }
         }
         stage('Test') {
             steps {
