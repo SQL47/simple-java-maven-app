@@ -4,13 +4,14 @@ pipeline {
         maven 'maven'
         jdk 'jdk'
     }
+    
     stages {
         stage('Build') {
             steps {
                 sh 'mvn clean package'
             }
             steps {
-                sh 'file 22'
+                sh 'file 22'           
             }
         }
         stage('Test') {
